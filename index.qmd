@@ -1,0 +1,18 @@
+---
+title: "My Analysis"
+format: html
+editor: visual
+embed-resources: true
+---
+```{r}
+library(tidyverse)
+
+```
+
+```{r}
+storms |>
+  ggplot() +
+  geom_point(mapping = aes (x=pressure,
+                           y = wind))
+```
+
